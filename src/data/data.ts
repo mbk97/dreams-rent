@@ -1,3 +1,12 @@
+import { IoLogoInstagram } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import apple from "assets/svgs/applegpay.svg";
+import master from "assets/svgs/master.svg";
+import paypal from "assets/svgs/paypal.svg";
+import visa from "assets/svgs/visa.svg";
 export const navData = [
   {
     id: 1,
@@ -148,5 +157,79 @@ export const navData = [
         text: "Blog details",
       },
     ],
+  },
+];
+
+export const payData = [
+  {
+    id: 1,
+    img: paypal,
+  },
+  {
+    id: 2,
+    img: visa,
+  },
+  {
+    id: 3,
+    img: master,
+  },
+  {
+    id: 4,
+    img: apple,
+  },
+];
+
+export const footerData = [
+  {
+    title: "About Company",
+    links: [
+      "Our Company",
+      "Shop Toyota",
+      "Dreamsrentals USA",
+      "Dreamsrentals Worldwide",
+      "Dreamsrental Category",
+    ],
+  },
+  {
+    title: "Vehicles Type",
+    links: ["All Vehicles", "SUVs", "Trucks", "Cars", "Crossovers"],
+  },
+  {
+    title: "Quick links",
+    links: [
+      "My Account",
+      "Champaigns",
+      "Dreamsrental Dealers",
+      "Deals and Incentive",
+      "Financial Services",
+    ],
+  },
+];
+
+export const social_media_icons = [
+  {
+    id: 1,
+    Icon: FaFacebook,
+    bg: "#3080f8",
+  },
+  {
+    id: 2,
+    Icon: IoLogoInstagram,
+    bg: "#ff2d20",
+  },
+  {
+    id: 3,
+    Icon: FaBehance,
+    bg: "#0066ff",
+  },
+  {
+    id: 4,
+    Icon: FaTwitter,
+    bg: "#35b6ff",
+  },
+  {
+    id: 5,
+    Icon: FaLinkedin,
+    bg: "#0066ff",
   },
 ];
