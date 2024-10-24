@@ -233,3 +233,26 @@ export const social_media_icons = [
     bg: "#0066ff",
   },
 ];
+
+export const faqs = [
+  {
+    question: "How old do I need to be to rent a car?",
+    answer:
+      "We offer a diverse fleet of vehicles to suit every need, including compact cars, sedans, SUVs and luxury vehicles. You can browse our selection online or contact us for assistance in choosing the right vehicle for you",
+  },
+  {
+    question: "What documents do I need to rent a car?",
+    answer:
+      "We offer a diverse fleet of vehicles to suit every need, including compact cars, sedans, SUVs and luxury vehicles. You can browse our selection online or contact us for assistance in choosing the right vehicle for you",
+  },
+  {
+    question: "What types of vehicles are available for rent?",
+    answer:
+      "We offer a diverse fleet of vehicles to suit every need, including compact cars, sedans, SUVs and luxury vehicles. You can browse our selection online or contact us for assistance in choosing the right vehicle for you",
+  },
+  {
+    question: "Can I rent a car with a debit card?",
+    answer:
+      "We offer a diverse fleet of vehicles to suit every need, including compact cars, sedans, SUVs and luxury vehicles. You can browse our selection online or contact us for assistance in choosing the right vehicle for you",
+  },
+];
