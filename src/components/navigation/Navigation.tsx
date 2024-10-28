@@ -56,8 +56,8 @@ const Navigation = () => {
               onMouseEnter={() => handleMouseEnter(id)}
               onMouseLeave={handleMouseLeave}
             >
-              <div className="flex items-center focus:outline-none cursor-pointer gap-2">
-                <h3 className="text-[#2F2F2F] font-medium py-2 rounded text-[16px]">
+              <div className="flex items-center focus:outline-none cursor-pointer gap-1">
+                <h3 className="text-[#2F2F2F] font-medium py-2 rounded text-[14px] xl:text-[16px]">
                   {title}
                 </h3>
                 <div className="text-[#2F2F2F] mt-1">

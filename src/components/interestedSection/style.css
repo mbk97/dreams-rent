@@ -1,0 +1,56 @@
+.featured_wrapper {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  text-transform: uppercase;
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 6;
+  top: -20px;
+  left: -20px;
+}
+.featured {
+  position: absolute;
+  padding: 4px 0;
+  box-shadow: 0px 4px 24px 0px rgba(225, 225, 225, 0.2509803922);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  font-size: 14px;
+  inset-inline-end: 0px;
+  inset-block-start: 24px;
+  transform: rotate(-45deg);
+  background-color: red;
+  left: -35px;
+  top: 10px;
+  padding-left: 50px;
+}
+.top_rated {
+  position: absolute;
+  padding: 4px 0;
+  box-shadow: 0px 4px 24px 0px rgba(225, 225, 225, 0.2509803922);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  font-size: 14px;
+  inset-inline-end: 0px;
+  inset-block-start: 24px;
+  transform: rotate(-45deg);
+  background-color: #ff9307;
+  left: -35px;
+  top: 10px;
+  padding-left: 30px;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #ffa633;
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 600px) {
+}
