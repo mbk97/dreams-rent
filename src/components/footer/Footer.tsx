@@ -7,7 +7,7 @@ import { footerData, payData, social_media_icons } from "data/data";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#201F1D] h-[auto] lg:h-[505px] relative  flex flex-col justify-between">
+    <footer className="bg-[#201F1D] h-[auto] lg:h-[505px] relative  flex flex-col justify-between mt-[70px] xl:px-[120px] px-[10px] md:px-[20px]">
       <div className="px-4">
         <div className="absolute left-0 top-[20px] hidden lg:block">
           <img src={floatImg} alt="" />
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="absolute bottom-[50px] right-[0px] hidden lg:block">
           <img src={floatImgTwo} alt="" />
         </div>
-        <section className="flex flex-wrap lg:justify-center lg:flex-nowrap pt-8 gap-[10px] md:gap-[40px] lg:gap-[60px] w-[96%]">
+        <section className="flex flex-wrap  justify-between lg:flex-nowrap pt-8 gap-[10px] md:gap-[40px] lg:gap-[60px] w-[100%]">
           {footerData.map((item) => {
             return (
               <div key={item.title} className="z-[10px] w-full sm:w-auto">

@@ -29,7 +29,7 @@ const ExtraService = () => {
     >
       <h2 className="text-[#111] text-[18px]">Extra Service</h2>
       <Line />
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
         {features.map((feat) => {
           return (
             <div className="flex gap-3 items-center mb-[15px]" key={feat.id}>

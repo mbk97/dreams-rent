@@ -10,9 +10,9 @@ import { IoGitCompareOutline } from "react-icons/io5";
 
 const Rating = () => {
   return (
-    <div className="flex h-auto lg:h-[168.59px] pt-[24px] pr-[24px] pb-[24px] pl-[24px] lg:py-[30px] shadow-sm bg-white ">
-      <div className="flex mx-auto justify-between w-[100%]">
-        <section className="mx-auto ">
+    <div className="flex h-auto lg:h-[168.59px] pt-[24px]  pb-[24px]  lg:py-[30px] shadow-sm bg-white ">
+      <div className="flex  justify-between w-[100%]  xl:px-[120px] px-[10px] md:px-[30px]">
+        <section className="w-[100%] px-[20px] md:px-0">
           <div className="flex items-center ">
             <div className="bg-[#111111] mr-1 w-[24px] h-[24px] rounded-[50%] grid place-items-center">
               <img src={carImg} alt="" className="" />
@@ -28,7 +28,7 @@ const Rating = () => {
             </div>
             <p className="text-[#676767] text-[14px]">(5.0)</p>
           </div>
-          <div className="flex justify-between flex-wrap lg:flex-nowrap items-center gap-4  lg:gap-16 w-[100%]">
+          <div className="flex justify-between flex-wrap lg:flex-nowrap  gap-4  lg:gap-16 w-[100%] ">
             <div>
               <h3 className="text-[38px] font-medium text-[#111111]">
                 Chevrolet Camaro
@@ -36,7 +36,7 @@ const Rating = () => {
               <div className="grid grid-cols-1 md:flex lg:gap-5 gap-2">
                 <div className="flex items-center">
                   <GrLocation size={14} className="text-[#676767] mr-1" />
-                  <p className="text-[14px] text-[#676767]">
+                  <p className="text-[14px] text-[#676767]  whitespace-nowrap">
                     Location : Miami St, Destin, FL 32550, USA
                   </p>
                   <div className="ml-5 bg-[#DBDBDB] w-[1px] h-[18px] hidden lg:block"></div>
@@ -48,7 +48,7 @@ const Rating = () => {
                 </div>
                 <div className="flex items-center">
                   <IoCarOutline size={14} className="text-[#676767] mr-1" />
-                  <p className="text-[14px] text-[#676767]">
+                  <p className="text-[14px] text-[#676767] ">
                     Views : Listed on: 01 Jan, 2024
                   </p>
                 </div>
@@ -57,7 +57,7 @@ const Rating = () => {
             <div className="flex gap-4">
               <CustomButton
                 text="Total Booking : 300"
-                width="220px"
+                width="190px"
                 bgColor="#127384"
                 Icon={BiCalendarEdit}
               />
