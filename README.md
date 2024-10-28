@@ -5,7 +5,7 @@ Dreams Rent Listing Page
 
 # Demo Link
 
-The link to the live project [https://mbk-portfolio.vercel.app/](https://codemania-test-livid.vercel.app/)
+The link to the live project https://dreams-rent.vercel.app/
 
 
 # Screenshot 
