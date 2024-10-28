@@ -103,7 +103,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       <div className="w-[100%] h-[65px] bg-[white] ">
-        <div className="flex items-center bigTablet:hidden justify-between w-[55%] px-4 fixed shadow-sm z-10 h-[65px]">
+        <div className="flex items-center bigTablet:hidden justify-between w-[55%] px-4 shadow-sm z-10 h-[65px]">
           <BiMenuAltLeft
             size={40}
             className="text-primary"
