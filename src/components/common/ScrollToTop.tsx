@@ -25,7 +25,7 @@ const ScrollToTop = () => {
   return (
     <>
       {isVisible && (
-        <div className="fixed bottom-8 right-8 flex flex-col items-center space-y-2">
+        <div className="fixed bottom-8 right-8 flex flex-col items-center space-y-2 z-20">
           <button
             onClick={scrollToTop}
             className="p-3 bg-transparent text-primary border-2  rounded-full border-primary  transition duration-300 ease-in-out"

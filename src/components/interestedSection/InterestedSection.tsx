@@ -47,7 +47,7 @@ const InterestedSection = () => {
 
       <Swiper
         slidesPerView={3}
-        spaceBetween={20}
+        spaceBetween={40}
         navigation={{
           nextEl: ".custom-next-arrow",
           prevEl: ".custom-prev-arrow",
@@ -71,7 +71,7 @@ const InterestedSection = () => {
       >
         {vehicles.map((vehicle, index) => (
           <SwiperSlide key={index}>
-            <div className=" w-[100%] xl:w-[406px] mt-10">
+            <div className=" w-[100%] xl:w-[380px] mt-10">
               <div className="relative">
                 {vehicle.featured && (
                   <div className="featured_wrapper">

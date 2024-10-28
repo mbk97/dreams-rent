@@ -36,82 +36,89 @@ const Navigation = () => {
   return (
     <nav className="flex md:h-[85px] h-[65px] w-[100%] relative">
       {/* Desktop Navigation */}
-      <section className="h-[100%] bg-[#ffffff] w-full px-[15px] shadow-sm items-center justify-between hidden bigTablet:flex">
-        <div className="flex items-center gap-4 ">
-          <BiMenuAltLeft
-            size={40}
-            className="text-primary hidden bigTablet:block lg:hidden"
-            onClick={handleOpenMenu}
-          />
-          <img src={logo} alt="Logo" className="" />
-        </div>
-        <div
-          className="flex space-x-6 bigTablet:hidden lg:block"
-          onMouseLeave={handleMouseLeave}
-        >
-          {navData.map(({ id, title, options }) => (
-            <div
-              className="relative inline-block"
-              key={id}
-              onMouseEnter={() => handleMouseEnter(id)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div className="flex items-center focus:outline-none cursor-pointer gap-1">
-                <h3 className="text-[#2F2F2F] font-medium py-2 rounded text-[14px] xl:text-[16px]">
-                  {title}
-                </h3>
-                <div className="text-[#2F2F2F] mt-1">
-                  <IoIosArrowDown size={20} />
-                </div>
-              </div>
-
-              {hoveredId === id && (
-                <div className="dropdown-content absolute bg-white border-t-2 border-t-primary shadow-lg rounded py-2 w-48 z-10 pointer-events-auto">
-                  {options?.map(({ optionId, text }) => (
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-gray-800 hover:text-primary"
-                      key={optionId}
-                    >
-                      {text}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-
-          <div className=" inline-block cursor-pointer gap-2">
-            <h3 className="text-[#2F2F2F] font-medium py-2 rounded text-[16px]">
-              Contact
-            </h3>
+      <div className="fixed md:h-[85px] h-[65px] w-[100%] bg-[#ffffff] shadow-sm z-10 hidden bigTablet:flex">
+        <section className="h-[100%]  w-full px-[15px]  items-center justify-between hidden bigTablet:flex">
+          <div className="flex items-center gap-4 ">
+            <BiMenuAltLeft
+              size={40}
+              className="text-primary hidden bigTablet:block lg:hidden"
+              onClick={handleOpenMenu}
+            />
+            <img src={logo} alt="Logo" className="" />
           </div>
-        </div>
+          <div
+            className="flex space-x-6 bigTablet:hidden lg:block"
+            onMouseLeave={handleMouseLeave}
+          >
+            {navData.map(({ id, title, options }) => (
+              <div
+                className="relative inline-block"
+                key={id}
+                onMouseEnter={() => handleMouseEnter(id)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="flex items-center focus:outline-none cursor-pointer gap-1">
+                  <h3 className="text-[#2F2F2F] font-medium py-2 rounded text-[14px] xl:text-[16px]">
+                    {title}
+                  </h3>
+                  <div className="text-[#2F2F2F] mt-1">
+                    <IoIosArrowDown size={20} />
+                  </div>
+                </div>
 
-        <div className="flex items-center gap-3">
-          <CustomButton width="112.7px" text="Sign In" Icon={FaRegUser} />
-          <CustomButton
-            width="112.7px"
-            text="Sign Up"
-            Icon={FaLock}
-            bgColor="#FFA633"
-          />
-        </div>
-      </section>
+                {hoveredId === id && (
+                  <div className="dropdown-content absolute bg-white border-t-2 border-t-primary shadow-lg rounded py-2 w-48 z-10 pointer-events-auto">
+                    {options?.map(({ optionId, text }) => (
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-gray-800 hover:text-primary"
+                        key={optionId}
+                      >
+                        {text}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+
+            <div className=" inline-block cursor-pointer gap-2">
+              <h3 className="text-[#2F2F2F] font-medium py-2 rounded text-[16px]">
+                Contact
+              </h3>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <CustomButton width="112.7px" text="Sign In" Icon={FaRegUser} />
+            <CustomButton
+              width="112.7px"
+              text="Sign Up"
+              Icon={FaLock}
+              bgColor="#FFA633"
+            />
+          </div>
+        </section>
+      </div>
 
       {/* Mobile Navigation */}
-      {/* <section className=" w-[100%] h-[65px] bg-[red]"> */}
-      <div className="flex items-center bigTablet:hidden justify-between w-[65%] px-4">
-        <BiMenuAltLeft
-          size={40}
-          className="text-primary"
-          onClick={handleOpenMenu}
-        />
-        <img src={smallLogo} alt="Small Logo" />
+      <div className="w-[100%] h-[65px] bg-[white] ">
+        <div className="flex items-center bigTablet:hidden justify-between w-[55%] px-4 shadow-sm z-10 h-[65px]">
+          <BiMenuAltLeft
+            size={40}
+            className="text-primary"
+            onClick={handleOpenMenu}
+          />
+          <img src={smallLogo} alt="Small Logo" />
+        </div>
       </div>
 
       {open && (
-        <div className="absolute top-0 left-0 bg-[#201F1D] h-[100vh] w-[65%] z-50">
+        <div
+          className={`absolute  top-0 left-0 bg-[#201F1D] h-[100vh] w-[55%] z-50 transition-transform duration-300 ease-in-out ${
+            open ? "transform translate-x-0" : "transform -translate-x-full"
+          }`}
+        >
           <div className="">
             <div className="bg-[white] w-[100%] flex justify-between items-center gap-10 h-[65px] ">
               <img
