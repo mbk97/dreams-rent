@@ -7,8 +7,8 @@ import { footerData, payData, social_media_icons } from "data/data";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#201F1D] h-[auto] lg:h-[505px] relative  flex flex-col justify-between mt-[70px] xl:px-[120px] px-[10px] md:px-[20px]">
-      <div className="px-4">
+    <footer className="bg-[#201F1D] h-[auto] lg:h-[505px] relative  flex flex-col justify-between mt-[70px] ">
+      <div className="xl:px-[120px] px-[10px] md:px-[20px]">
         <div className="absolute left-0 top-[20px] hidden lg:block">
           <img src={floatImg} alt="" />
         </div>
